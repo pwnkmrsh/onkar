@@ -9,7 +9,7 @@
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -64,6 +64,33 @@
         }
         .text-shadow{
             text-shadow: 5px 5px 5px #000;
+        }
+
+           /* Floating WhatsApp Button */
+           .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float a {
+            color: white;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -525,10 +552,15 @@
         </div>
     </div>
     <!-- Footer End -->
-
+  <!-- WhatsApp Floating Button -->
+  <div class="whatsapp-float">
+    <a href="https://wa.me/9340920082" target="_blank">
+        <i class="bi bi-whatsapp"></i>  <!-- Bootstrap WhatsApp Icon -->
+    </a>
+</div>
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-secondary py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+   <!--  <a href="#" class="btn btn-secondary py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a> -->
 
 
                     <!-- JavaScript Libraries -->
